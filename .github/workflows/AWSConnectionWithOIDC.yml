@@ -19,7 +19,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::841488519191:role/github_oidc_role
-#          role-session-name: oidcrolesession
+          role-session-name: oidcrolesession
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Print AWS SSM Parameter
